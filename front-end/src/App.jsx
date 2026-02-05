@@ -9,6 +9,8 @@ import TopBar from './Dashboard/TopBar'
 import Dashboard from './Dashboard/Dashboard'
 import Login from './Pages/Login'
 import Signup from './Pages/SignUp'
+import SoilMoisturing  from './SoilMoisturing/page'
+import Weather  from './Weather/page'
 
 function App({children}) {
 
@@ -21,6 +23,8 @@ function App({children}) {
         <Route path="/" element={<LandingPage />} />
         <Route path="/Dashboard" element={<Dashboard/>}/>
         <Route path="/Login" element={<Login/>}/>
+        <Route path="/soil-monitoring" element={<SoilMoisturing/>}/>
+        <Route path="/weather" element={<Weather/>}/>
         <Route path="/Signup" element={<Signup/>}/>
       </Routes>
     </main>
